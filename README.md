@@ -67,7 +67,7 @@ The primary objective of this repository is to demonstrate how to define and use
     - Created a new file named `provider.tf`:
     ```hcl
     provider "github" {
-      token = "your_github_token"
+      token = "github_token"
     }
     ```
 
@@ -81,7 +81,7 @@ The primary objective of this repository is to demonstrate how to define and use
     - Add the following resource block in `main.tf`:
     ```hcl
     resource "github_repository" "example" {
-      name        = "my-awesome-github-repo"
+      name        = "this-awesome-github-repo"
       description = "This repo is created using Terraform"
       private     = false
     }
